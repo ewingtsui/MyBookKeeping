@@ -1,12 +1,10 @@
-﻿@model   IEnumerable<MyBookKeeping.Models.BookingsModels>
+﻿@model   IEnumerable<MyBookKeeping.Models.ViewModels.BookingsViewModels>
 
 @{
     ViewBag.Title = "Create";
 }
 
 <h2>新增記帳本</h2>
-
-
 @using (Html.BeginForm("Create", "Booking", FormMethod.Post))
 {
     <div class="well">
@@ -50,5 +48,6 @@
 }
 
 
-<h3>我的記帳本</h3>
-@Html.Partial("_DetailList")
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
