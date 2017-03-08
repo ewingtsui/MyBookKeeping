@@ -1,0 +1,54 @@
+﻿@model   IEnumerable<MyBookKeeping.Models.BookingsModels>
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>新增記帳本</h2>
+
+
+@using (Html.BeginForm("Create", "Booking", FormMethod.Post))
+{
+    <div class="well">
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="BookType" class="col-sm-2 col-md-1 col-lg-1 control-label">類別</label>
+                <div class="col-sm-10 col-md-2 col-lg-2">
+                    <select name="BookType" class="form-control">
+                        <option value="" selected>請選擇</option>
+                        <option>支出</option>
+                        <option>收入</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="BookDate" class="col-sm-2 col-md-1 col-lg-1 control-label">日期</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" name="Date" placeholder="日期">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="BookAmount" class="col-sm-2 col-md-1 col-lg-1 control-label">金額</label>
+                <div class="col-sm-10 col-md-10 col-lg-10">
+                    <input type="text" class="form-control" name="Money" placeholder="金額">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Bookmemo" class="col-sm-2 col-md-1 col-lg-1 control-label">備註</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" name="memo"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-1 col-md-1 col-lg-1 col-md-offset-1">
+                    <button type="submit" class="btn btn-default">送　出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<h3>我的記帳本</h3>
+@Html.Partial("_DetailList")
