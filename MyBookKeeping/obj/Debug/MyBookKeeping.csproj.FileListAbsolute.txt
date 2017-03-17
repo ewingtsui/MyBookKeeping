@@ -173,3 +173,4 @@ D:\GitHub\MyBookKeeping\MyBookKeeping\bin\zh-Hant\Microsoft.Owin.Security.Micros
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.csprojResolveAssemblyReference.cache
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.dll
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.pdb
+C:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.csprojResolveAssemblyReference.cache

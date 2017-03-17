@@ -18,8 +18,8 @@
                     <td>@(++i)</td>
                     <td>@item.ID</td>
                     <td>@item.BookType</td>
-                    <td>@item.BookDate</td>
-                    <td>@item.BookAmount</td>
+                    <td>@item.BookDate.ToString("yyyy-MM-dd")</td>
+                    <td>@item.BookAmount.ToString("###,###")</td>
                     <td>@item.BookMemo</td>
                 </tr>
             }

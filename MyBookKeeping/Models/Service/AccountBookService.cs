@@ -20,6 +20,7 @@ namespace MyBookKeeping.Models.Service
             {
                 BookingsViewModels GetAccountBook = new BookingsViewModels();
 
+                GetAccountBook.ID = item.Id;
                 if (item.Categoryyy == 0)
                 {
                     GetAccountBook.BookType = "支出";
