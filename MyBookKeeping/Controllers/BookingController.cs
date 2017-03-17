@@ -10,12 +10,12 @@ namespace MyBookKeeping.Controllers
 {
     public class BookingController : Controller
     {
-        AccountBookService _dbService = new AccountBookService();
+        AccountBookService AccountBookService = new AccountBookService();
 
         // GET: Booking
         public ActionResult Index()
         {
-            var source = _dbService.AccountBookList();
+            var source = AccountBookService.AccountBookList();
             return View(source);
         }
 
