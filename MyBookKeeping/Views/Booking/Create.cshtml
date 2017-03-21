@@ -25,7 +25,7 @@
             <div class="form-group">
                 @Html.LabelFor(d=>d.BookDate,htmlAttributes:new { @class = "col-sm-2 col-md-1 col-lg-1 control-label" })
                 <div class="col-sm-10">
-                    @Html.EditorFor(d => d.BookDate, new { htmlAttributes=new { @class = "form-control", id = "day", placeholder = "日期" } })
+                    @Html.EditorFor(d => d.BookDate, new { htmlAttributes=new { @class = "form-control", id = "_date", placeholder = "日期" } })
                     @Html.ValidationMessageFor(d=>d.BookDate,"",new { @class = "text-danger" })
                 </div>
             </div>
@@ -51,6 +51,14 @@
             </div>
         </div>
     </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <link href="~/Content/bootstrap-datepicker3.css" rel="stylesheet" />
+    <script src="~/Scripts/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script src="~/Scripts/MyBookKeeping.js"></script>
 }
 
 
