@@ -1,41 +1,47 @@
-﻿@model   IEnumerable<MyBookKeeping.Models.ViewModels.BookingsViewModels>
+﻿@model   MyBookKeeping.Models.ViewModels.BookingsViewModels
 
 @{
     ViewBag.Title = "Create";
 }
 
 <h2>新增記帳本</h2>
-@using (Html.BeginForm("Create", "Booking", FormMethod.Post))
+@using (Html.BeginForm())
 {
     <div class="well">
         @Html.AntiForgeryToken()
         <div class="form-horizontal">
             <div class="form-group">
-                <label for="BookType" class="col-sm-2 col-md-1 col-lg-1 control-label">類別</label>
+                @Html.LabelFor(d => d.BookType, htmlAttributes: new { @class = "col-sm-2 col-md-1 col-lg-1 control-label" })
                 <div class="col-sm-10 col-md-2 col-lg-2">
-                    <select name="BookType" class="form-control">
-                        <option value="" selected>請選擇</option>
-                        <option>支出</option>
-                        <option>收入</option>
-                    </select>
+                    @Html.DropDownListFor(d => d.BookType, new List<SelectListItem>
+                    {
+                        new SelectListItem {Text="支出",Value="0" },
+                        new SelectListItem {Text="收入",Value="1"}
+                     }, "請選擇", new { @class = "form-control" }
+                   )
                 </div>
             </div>
+
             <div class="form-group">
-                <label for="BookDate" class="col-sm-2 col-md-1 col-lg-1 control-label">日期</label>
+                @Html.LabelFor(d=>d.BookDate,htmlAttributes:new { @class = "col-sm-2 col-md-1 col-lg-1 control-label" })
                 <div class="col-sm-10">
-                    <input type="date" class="form-control" name="Date" placeholder="日期">
+                    @Html.EditorFor(d => d.BookDate, new { htmlAttributes=new { @class = "form-control", id = "day", placeholder = "日期" } })
+                    @Html.ValidationMessageFor(d=>d.BookDate,"",new { @class = "text-danger" })
                 </div>
             </div>
+
+
             <div class="form-group">
-                <label for="BookAmount" class="col-sm-2 col-md-1 col-lg-1 control-label">金額</label>
+                @Html.LabelFor(d => d.BookAmount, htmlAttributes: new { @class = "col-sm-2 col-md-1 col-lg-1 control-label" })
                 <div class="col-sm-10 col-md-10 col-lg-10">
-                    <input type="text" class="form-control" name="Money" placeholder="金額">
+                    @Html.EditorFor(d => d.BookAmount, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(d => d.BookAmount, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
-                <label for="Bookmemo" class="col-sm-2 col-md-1 col-lg-1 control-label">備註</label>
+                @Html.LabelFor(d => d.BookMemo, htmlAttributes: new { @class = "col-sm-2 col-md-1 col-lg-1 control-label" })
                 <div class="col-sm-10">
-                    <textarea class="form-control" name="memo"></textarea>
+                    @Html.TextAreaFor(d => d.BookMemo, new { htmlAttributes = new { @class = "form-control"} })
                 </div>
             </div>
             <div class="form-group">
