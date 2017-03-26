@@ -224,6 +224,74 @@
       <DependentUpon>AccountBook.edmx</DependentUpon>
       <LastGenOutput>AccountBook1.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.az.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.da.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.de.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.el.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.es.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.et.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.he.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.id.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.is.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.it.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.me.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.nb.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.no.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.th.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker\bootstrap-datepicker.zh-TW.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\AccountBook.edmx">
@@ -234,7 +302,6 @@
       <DependentUpon>AccountBook.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\JavaScript.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -243,7 +310,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\MyBookKeeping.js" />
+    <Content Include="Scripts\myself\MyBookKeeping.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -298,6 +365,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
