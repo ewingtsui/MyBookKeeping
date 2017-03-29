@@ -5,6 +5,14 @@
 }
 
 <h2>新增記帳本</h2>
+
+@if (Model != null && string.IsNullOrWhiteSpace(Model.Message) == false)
+{
+    <div class="alert alert-danger">
+        @Model.Message
+    </div>
+}
+
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()

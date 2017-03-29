@@ -30,5 +30,7 @@ namespace MyBookKeeping.Models.ViewModels
         [Required]
         [MaxLength(100)]
         public string BookMemo { get; set; }
+
+        public string Message { get; set; }
     }
 }

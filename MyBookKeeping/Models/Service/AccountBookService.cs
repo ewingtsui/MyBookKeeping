@@ -11,6 +11,20 @@ namespace MyBookKeeping.Models.Service
     public class AccountBookService
     {
         private SkillTreeHomeworkEntities db = new SkillTreeHomeworkEntities();
+
+        public int AddData(BookingsViewModels viewModel)
+        {
+            this.db.AccountBook.Add(new AccountBook()
+            {
+                Id = Guid.NewGuid(),
+                Categoryyy = Convert.ToInt32(viewModel.BookType),
+                Amounttt = viewModel.BookAmount,
+                Dateee = viewModel.BookDate,
+                Remarkkk = viewModel.BookMemo
+            });
+
+            return this.db.SaveChanges();
+        }
         
         public List<BookingsViewModels> AccountBookList()
         {
