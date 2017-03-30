@@ -13,17 +13,16 @@ namespace MyBookKeeping.Models.Service
     {
         private SkillTreeHomeworkEntities db = new SkillTreeHomeworkEntities();
 
-        public int AddData([Bind(Include = "Id,Categoryyy,Amounttt,Dateee,Remarkkk")] AccountBook acct)
+        public void AddData([Bind(Include = "Id,Categoryyy,Amounttt,Dateee,Remarkkk")] AccountBook acct)
         {
             db.AccountBook.Add(acct);
-            return db.SaveChanges();
         }
-        
+
         public List<BookingsViewModels> AccountBookList()
         {
             List<BookingsViewModels> LastDetail = new List<BookingsViewModels>();
 
-            foreach(var item in db.AccountBook.OrderBy(d=>d.Id).ToList())
+            foreach (var item in db.AccountBook.OrderBy(d => d.Id).ToList())
             {
                 BookingsViewModels GetAccountBook = new BookingsViewModels();
 
@@ -45,6 +44,11 @@ namespace MyBookKeeping.Models.Service
             }
 
             return LastDetail;
+        }
+
+        public int Save()
+        {
+            return db.SaveChanges();
         }
     }
 }
