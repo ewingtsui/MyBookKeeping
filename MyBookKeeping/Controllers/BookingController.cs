@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 using MyBookKeeping.Models.Service;
 using MyBookKeeping.Models.ViewModels;
+using MyBookKeeping.Models;
 
 namespace MyBookKeeping.Controllers
 {
@@ -28,24 +29,32 @@ namespace MyBookKeeping.Controllers
 
         // POST: Booking/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(BookingsViewModels model)
         {
             try
             {
                 // TODO: Add insert logic here
-                if (ModelState.IsValid == true)
+                if (ModelState.IsValid)
                 {
-                    AccountBookService.AddData(model);
-                }               
+                    AccountBook  acct = new AccountBook()
+                    {
+                        Id = Guid.NewGuid(),
+                        Categoryyy = Convert.ToInt32(model.BookType),
+                        Amounttt = model.BookAmount,
+                        Dateee = model.BookDate,
+                        Remarkkk = model.BookMemo
+                    };
 
-                return RedirectToAction("Index");
+                    AccountBookService.AddData(acct);
+                    return RedirectToAction("Index");
+                }
+
+                return View(model);
             }
             catch
             {
-                model.Message =  
-                    $"有錯誤: ";
-                //return View();
-                return RedirectToAction("About", "Home");
+                return View();
             }
         }
     }

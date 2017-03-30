@@ -4,14 +4,9 @@
     ViewBag.Title = "Create";
 }
 
-<h2>新增記帳本</h2>
+@*@string.Format("您傳進來的是{0}", Model.Message)*@
 
-@if (Model != null && string.IsNullOrWhiteSpace(Model.Message) == false)
-{
-    <div class="alert alert-danger">
-        @Model.Message
-    </div>
-}
+<h2>新增記帳本</h2>
 
 @using (Html.BeginForm())
 {
@@ -57,7 +52,7 @@
 
             <div class="form-group">
                 <div class="col-md-10 col-md-offset-2">
-                    <button type="submit" class="btn btn-default">送　出</button>
+                    <button type="submit" value="Create" class="btn btn-default">送　出</button>
                 </div>
             </div>
         </div>

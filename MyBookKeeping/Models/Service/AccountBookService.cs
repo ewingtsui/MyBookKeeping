@@ -5,6 +5,7 @@ using System.Web;
 
 using MyBookKeeping.Models;
 using MyBookKeeping.Models.ViewModels;
+using System.Web.Mvc;
 
 namespace MyBookKeeping.Models.Service
 {
@@ -12,18 +13,10 @@ namespace MyBookKeeping.Models.Service
     {
         private SkillTreeHomeworkEntities db = new SkillTreeHomeworkEntities();
 
-        public int AddData(BookingsViewModels viewModel)
+        public int AddData([Bind(Include = "Id,Categoryyy,Amounttt,Dateee,Remarkkk")] AccountBook acct)
         {
-            this.db.AccountBook.Add(new AccountBook()
-            {
-                Id = Guid.NewGuid(),
-                Categoryyy = Convert.ToInt32(viewModel.BookType),
-                Amounttt = viewModel.BookAmount,
-                Dateee = viewModel.BookDate,
-                Remarkkk = viewModel.BookMemo
-            });
-
-            return this.db.SaveChanges();
+            db.AccountBook.Add(acct);
+            return db.SaveChanges();
         }
         
         public List<BookingsViewModels> AccountBookList()

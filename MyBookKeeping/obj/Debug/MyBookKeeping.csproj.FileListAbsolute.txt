@@ -173,7 +173,6 @@ D:\GitHub\MyBookKeeping\MyBookKeeping\bin\zh-Hant\Microsoft.Owin.Security.Micros
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.csprojResolveAssemblyReference.cache
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.dll
 D:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.pdb
-C:\GitHub\MyBookKeeping\MyBookKeeping\obj\Debug\MyBookKeeping.csprojResolveAssemblyReference.cache
 E:\GitHub\MyBookKeeping\MyBookKeeping\bin\roslyn\csc.exe
 E:\GitHub\MyBookKeeping\MyBookKeeping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\GitHub\MyBookKeeping\MyBookKeeping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
