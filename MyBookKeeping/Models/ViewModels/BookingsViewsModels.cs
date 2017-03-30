@@ -23,7 +23,7 @@ namespace MyBookKeeping.Models.ViewModels
 
         [Display(Name = "日期")]
         [Required]
-        [Remote("Valid", "Accounting", ErrorMessage = "日期不可大於今天")]
+       // [Remote("Valid", "Accounting", ErrorMessage = "日期不可大於今天")]
         public DateTime BookDate { get; set; }
         
         [Display(Name = "備註")]

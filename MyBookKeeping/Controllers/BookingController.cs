@@ -47,6 +47,7 @@ namespace MyBookKeeping.Controllers
                     };
 
                     AccountBookService.AddData(acct);
+                    AccountBookService.Save();
                     return RedirectToAction("Index");
                 }
 
