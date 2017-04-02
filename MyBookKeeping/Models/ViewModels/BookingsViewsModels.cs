@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
+using MyBookKeeping.Filter;
 
 namespace MyBookKeeping.Models.ViewModels
 {
@@ -19,11 +20,11 @@ namespace MyBookKeeping.Models.ViewModels
         [Display(Name = "金額")]
         [Required]
         [Range(1, int.MaxValue)]
-        public int BookAmount { get; set; }
+        public int BookAmount { get; set; } 
 
         [Display(Name = "日期")]
         [Required]
-        [Remote("Valid", "Accounting", ErrorMessage = "日期不可大於今天")]
+        [RemotePlus("CheckToday", "Validate", "", ErrorMessage = "日期不可大於今日")]   //改成這種寫法可以避免上面的問題
         public DateTime BookDate { get; set; }
         
         [Display(Name = "備註")]
